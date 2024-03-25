@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Por favor, digite o nome de usuario: ");
+        String usuario = scanner.nextLine().toLowerCase();
+
+        System.out.println(" Por favor, insira a senha: ");
+        String senha = scanner.nextLine().toLowerCase();            
+            
+        while (senha.equals(usuario)) {                
+            System.out.println("SENHA INVALIDA!! Digite uma senha valida.");
+            senha = scanner.nextLine().toLowerCase(); 
+        }
+        System.out.println("Senha valida.");
+        System.out.println("Seja Bem vindo " + usuario);
+        scanner.close();           
+            
+    }
+}
